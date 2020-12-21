@@ -1,16 +1,12 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 26 19:09:41 2020
+# -*- coding: utf-8 -*
+#@author :SHUBHAM SHARMA
+#This script is covered under GNU AGPL License
+#This script deals with download of planet labs data 
+#At present it is downloading the  October 2020 mosaics of planetlabs under NICFI program
+#The script requires bounding boxes of each Tehsil/Taluka for Indian Region
+#To download the data the user requires Planet API key which must be specified,otherwise the data will not get downloaded.
 
-@author: SHUBHAM
-"""
 
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Nov 25 00:05:11 2020
-
-@author: SHUBHAM
-"""
 
 import os
 import json
