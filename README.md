@@ -1,5 +1,6 @@
 # unc-gis-planet-download
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+[![Coverage Status](https://coveralls.io/repos/github/geospoc/unc-gis-planet-download/badge.svg?branch=main)](https://coveralls.io/github/geospoc/unc-gis-planet-download?branch=main)
 
 Repo containing script to download Planetscope(4.77m) data sponcered by NICFI( Terms of use and allied info at https://assets.planet.com/docs/NICFI_General_FAQs.pdf ).
 
