@@ -31,4 +31,3 @@ If applicable, add screenshots to help explain your problem.
 
 **Additional context**
 Additional information can be mentioned here.
-
