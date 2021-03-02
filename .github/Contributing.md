@@ -15,4 +15,6 @@ Contributing guidelines
 
 - Maintainers will respond within 2 days for the resolution of bugs.
 
+-Issue templates are available at [link] : https://github.com/geospoc/unc-gis-planet-download/edit/main/.github/ISSUE_TEMPLATE
+
 
