@@ -12,7 +12,7 @@ import json
 import requests
 from requests.auth import HTTPBasicAuth
 import pandas as pd
-
+from pathlib import Path
 
 def download():
     
@@ -82,7 +82,9 @@ def download():
         quad_result=search_result2.json()
         
         if os.path.exists(os.path.join(main_path,taluk))==False:
-                os.mkdir(os.path.join(main_path,taluk))
+                #os.mkdir(os.path.join(main_path,taluk))
+                fpath=Path(os.path.join(main_path,taluk)) 
+                fpath.mkdir(parents=True, exist_ok=True)       
              
         print(len(quad_result['items']))        
         for i in range(len(quad_result['items'])):
