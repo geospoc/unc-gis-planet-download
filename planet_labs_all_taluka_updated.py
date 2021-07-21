@@ -17,10 +17,11 @@ import pandas as pd
 def download():
     
     # Path where data will be downloaded
-    main_path=''
+    main_path=os.getenv("DATA")
+    csv=os.getenv("CSV")
     
     # API Key
-    PLANET_API_KEY = ''
+    PLANET_API_KEY = os.getenv("PLANET_API_KEY")
     
     
     item_type = "PSScene4Band"
@@ -53,8 +54,8 @@ def download():
     f_date=result['mosaics'][8]['first_acquired']
     e_date=result['mosaics'][8]['last_acquired']
     
-    bbox=pd.read_csv('U:\\Taluka_bbox_updated.csv',index_col=False)
-    bbox=bbox[(bbox['Taluka']=='Akole') | (bbox['Taluka']=='Igatpuri')]
+    bbox=pd.read_csv(csv+'csv_test.csv',index_col=False)
+    #bbox=bbox[(bbox['Taluka']=='Akole') | (bbox['Taluka']=='Igatpuri')]
     
     clist=[]              #all titles list
     quad_list=[]          #Non overlapping titles
@@ -126,6 +127,8 @@ def download():
     
     assert os.listdir(filedir)!=[]
     
+    #Changing meta_data of the planet data (optional)
+    """
     for j in os.listdir(filedir):
         
         fdir=os.path.join(filedir,j)
@@ -145,6 +148,7 @@ def download():
                 
         else:
             print("{} empty".format(j))
+    """
             
     return [search_result.status_code,response.status_code]
             
