@@ -111,8 +111,10 @@ def download():
                 print("Duplicate id{} ".format(dat_id))
             
             
-            
-    #############Metadata editing in the files###################################    
+        
+    ############# Metadata editing in the files (OPTIONAL) ###################################       
+    """    
+     
     #edit_path contains the path of gdal_edit.py file
     #Change these paths for metadata change
     #Directory structure example
@@ -130,7 +132,7 @@ def download():
     assert os.listdir(filedir)!=[]
     
     #Changing meta_data of the planet data (optional)
-    """
+    
     for j in os.listdir(filedir):
         
         fdir=os.path.join(filedir,j)
@@ -150,6 +152,7 @@ def download():
                 
         else:
             print("{} empty".format(j))
+            
     """
             
     return [search_result.status_code,response.status_code]
